@@ -1,0 +1,327 @@
+
+/* 共通*/
+body { 
+  font-size: 15px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+/* ここからheader*/
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-container{
+  display: flex;
+  margin:0px 36px;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.logo{
+  width: auto;
+  height: 20px;
+}
+
+.header-nav-list ul {
+  display: flex;
+}
+
+
+.nav-list-item {
+  margin-left: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-list-item:hover {
+  opacity: 0.8;
+}
+
+.list-item p:last-child {
+  font-size: 8px;
+}
+
+.list-btn {
+  display: block;
+  font-size: 12px;
+  background-color: darkorange;
+  height: 40px;
+  width: 150px;
+  border-radius:20px ;
+  color: white;
+  line-height: 40px;
+}
+
+/*ハンバーガーメニュー*/
+
+.header-hamburgermenu {
+  display: none;
+}
+
+/* ここからtop-wrapper*/
+
+.top-wrapper {
+  background-image: url(image/backgroundimg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+  padding-top: 100px;
+}
+
+.main-img {
+  display: none;
+  width: 100%;
+}
+
+
+.first-container {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.first-contents  {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+
+.first-view {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.first-view-img {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.first-view-img img:nth-of-type(1) {
+  width: 28%;
+}
+.first-view-img img:nth-of-type(2) {
+  width: 40%;
+}
+
+.first-view-img img:nth-of-type(3) {
+  width: 28%;
+}
+
+.first-view-btn  {
+  display: flex;
+}
+
+.first-view-btn a {
+  margin-right: 15px;
+  color: white;
+  background-color: darkorange;
+  width: 300px;
+  border-radius: 40px;
+  line-height: 60px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.first-view-btn a:hover {
+  opacity: 0.8;
+}
+
+.first-view-btn a:last-child {
+  color: black;
+  width: 170px;
+  background-color: white;
+  border: 1px solid rgb(179, 173, 173);
+}
+
+.caption {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* ここからabout-wrapper*/
+
+.about-wrapper {
+  background-color: darkorange;
+  padding: 50px 0px;
+
+}
+
+.about-contents {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  
+}
+
+video {
+  width: 50%;
+ }
+
+ .about-text {
+   margin-left: 30px;
+   line-height: 28px;
+   color: white;
+   padding-top: 50px;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+ }
+
+ .about-text h2 {
+   font-size: 38px;
+ }
+
+ .about-text p{
+   margin: 20px 0px;
+   font-size: 16px;
+ }
+
+ .about-btn {
+   display: flex;
+ }
+
+ .about-btn p {
+   margin-left: 5px;
+   font-size: 16px;
+}
+
+
+/*タブレット版*/
+@media (max-width: 1024px) {
+ .about-contents {
+  display: block;
+  width: 80%;
+}
+
+video {
+  width: 100%;
+}
+
+.about-text {
+  width: 100%;
+  line-height: normal;
+}
+
+}
+
+
+@media (max-width: 1080px) {
+  .pc{
+    display:none
+  }
+
+  header{
+    position: fixed;
+  }
+
+.header-hamburgermenu {
+  display: block;
+  
+}
+
+  .hamburger-item span {
+    position: absolute;       
+    right: 15px;              
+    width: 30px;              
+    height: 4px;              
+    background-color: black;  
+    border-radius: 8px;       
+    text-align: center;
+  }
+
+  .hamburger-item span:nth-of-type(1) {
+    top: 14px;
+  }
+  .hamburger-item span:nth-of-type(2) {
+    top: 26px;
+  }
+  .hamburger-item span:nth-of-type(3) {
+    bottom: 14px;
+  }
+
+  header {
+    background-color: white;
+  }
+}
+/*--------スマホ版-------------*/
+@media (max-width: 767px) {
+
+  .top-wrapper {
+    background-image: none;
+
+  }
+  .main-img{
+    display: block;
+  }
+
+
+  .first-container {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .first-contents {
+    width: 100%;
+  }
+
+  .first-view {
+    font-size: 25px;
+    
+  }
+
+  .first-view-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .first-view-img img:nth-of-type(1) {
+    width: 28%;
+  }
+  .first-view-img img:nth-of-type(2) {
+    width: 40%;
+  }
+
+  .first-view-img img:nth-of-type(3) {
+    width: 28%;
+  }
+
+  .first-view-btn a{
+    width: 100%;
+    margin: 0px;
+  }
+
+
+
+  .first-view-btn a:last-child {
+    display: none;
+  }
+
+/*--------about-------------*/
+.about-contents {
+  display: block;
+  width: 100%;
+  
+}
+
+ 
+
+}
